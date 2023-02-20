@@ -20,13 +20,17 @@ function Technology3() {
         <div>
             {news.map((items) => (
                 <div>
-                    <div className="container">
-                        <div className="image-wrapper">
-                            <img src={items.yoast_head_json.og_image[0].url} alt="random" className="image1" />
-                        </div>
-                        <div className="text-wrapper">
-                            <h2> {items.title.rendered} </h2>
-                            <h6> {items.excerpt.rendered} </h6>
+                    <div className=" mb-3">
+                        <div className="row g-0">
+                            <div className="col-md-4">
+                                <img src={items.yoast_head_json.og_image[0].url} alt="random" className="image1" />
+                            </div>
+                            <div className="col-md-8">
+                                <div className="card-body">
+                                    <h2 className="card-title">{items.title.rendered}</h2>
+                                    <p className="card-text">{items.excerpt.rendered}</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

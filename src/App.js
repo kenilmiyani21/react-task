@@ -20,6 +20,13 @@ import World2 from './Component/World2';
 import World3 from './Component/World3';
 import Technology2 from './Component/Technology2';
 import Technology3 from './Component/Technology3';
+import Food from './Component/Food';
+import Entertainment from './Component/Entertainment';
+import Beauty from './Component/Beauty';
+import Food2 from './Component/Food2';
+import Food3 from './Component/Food3';
+import Entertainment2 from './Component/Entertainment2';
+import Entertainment3 from './Component/Entertainment3';
 
 function App() {
     return (
@@ -46,6 +53,14 @@ function App() {
                     <Route path="/gujarat" element={<Gujarat />} />
                     <Route path="/gujarat2" element={<Gujarat2 />} />
                     <Route path="/gujarat3" element={<Gujarat3 />} />
+                    <Route path="/food" element={<Food />} />                    
+                    <Route path="/food2" element={<Food2 />} />                    
+                    <Route path="/food3" element={<Food3 />} />                    
+                    <Route path="/entertainment" element={<Entertainment />} />
+                    <Route path="/entertainment2" element={<Entertainment2 />} />
+                    <Route path="/entertainment3" element={<Entertainment3 />} />
+                    <Route path="/beauty" element={<Beauty />} />
+                    
                 </Routes>
             </BrowserRouter>
         </div>

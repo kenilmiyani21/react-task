@@ -3,13 +3,13 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
 
-function Business() {
+function Entertainment3() {
     useEffect(() => {
         getimage();
     }, []);
     const [news, setNews] = useState([]);
     const getimage = async () => {
-        await axios.get('https://timenews.co.in/wp-json/wp/v2/posts?categories=7').then((res) => {
+        await axios.get('https://timenews.co.in/wp-json/wp/v2/posts?categories=265&page=3').then((res) => {
             setNews(res.data);
             console.log(res.data[1]);
             // console.log(res.data[1].yoast_head_json.og_image[0].url);
@@ -38,22 +38,22 @@ function Business() {
             <nav aria-label="Page navigation example">
                 <ul className="pagination">
                     <li className="page-item">
-                        <Link className="page-link" to="/business">
+                        <Link className="page-link" to="/entertainment">
                             1
                         </Link>
                     </li>
                     <li className="page-item">
-                        <Link className="page-link" to="/business2">
+                        <Link className="page-link" to="/entertainment2">
                             2
                         </Link>
                     </li>
                     <li className="page-item">
-                        <Link className="page-link" to="/business3">
+                        <Link className="page-link" to="/entertainment3">
                             3
                         </Link>
                     </li>
                     <li className="page-item">
-                        <Link className="page-link" to="/business2">
+                        <Link className="page-link" to="/entertainment2">
                             next
                         </Link>
                     </li>
@@ -63,4 +63,4 @@ function Business() {
     );
 }
 
-export default Business;
+export default Entertainment3;

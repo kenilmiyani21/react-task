@@ -7,11 +7,24 @@
     pointer-events: none;
 }
 
-.Nav-bar:hover {
+.navbarlink:hover {
     color: red;
 }
 
+.navbarlink:active{
+    background-color: pink;
+}
+
 .navbarlink {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-item {
+    color: black;
+    text-decoration: none;
+}
+.dropdown-menu {
     color: white;
     text-decoration: none;
 }
@@ -20,30 +33,27 @@
 }
 
 .image1 {
-    height: 50vh;
+    height: 40vh;
     width: 20vw;
     margin-bottom: 7%;
-   
-    
+    margin-top: 3%;
 }
 
-.image2{
+.image2 {
     width: 50vw;
     height: 70vh;
     margin: auto;
     margin-top: 4vh;
-
 }
-.textHome1{
+.textHome1 {
     justify-items: self-start;
     color: black;
     margin-top: 2vh;
 }
 
-.textHome2{
+.textHome2 {
     justify-content: center;
     color: black;
-   
 }
 .text-wrapper {
     flex: 0 0 50%;
@@ -72,13 +82,19 @@
     display: inline-block;
     padding: 10px 5px;
 }
-.pagination{
+.pagination {
     margin-left: 45%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {
         animation: App-logo-spin infinite 20s linear;
+    }
+    .image1 {
+        height: 15rem;
+        width: 15rem;
+        margin-bottom: 7%;
+        margin-top: 3%;
     }
 }
 

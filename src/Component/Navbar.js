@@ -54,6 +54,34 @@ function Navbar() {
                                 TECHNOLOGY
                             </NavLink>
                         </li>
+                        <li className="navbarlink nav-item dropdown text-white p-3">
+                            <NavLink
+                                className="nav-link dropdown-toggle"
+                                href="/"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                OTHER
+                            </NavLink>
+                            <ul className="dropdown-menu ">
+                                <li>
+                                    <NavLink className="dropdown-item" to="/food">
+                                        FOOD
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink className="dropdown-item" to="/entertainment">
+                                        ENTERTAINMENT
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink className="dropdown-item" to="/beauty">
+                                        BEAUTY
+                                    </NavLink>
+                                </li>
+                            </ul>
+                        </li>
                     </div>
                 </div>
             </nav>
