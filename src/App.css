@@ -24,7 +24,11 @@ body{
     color: white;
     text-decoration: none;
 }
-
+.bb1{
+    background-color: white;
+    padding: 1%;
+    align-items: center;
+}
 
 .dropdown-item {
     color: black;

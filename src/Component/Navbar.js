@@ -5,8 +5,11 @@ import { NavLink } from 'react-router-dom';
 function Navbar() {
     return (
         <div className="nav-bar">
+            <div className='bb1'>
+                <img className="bg-white" src="https://timenews.co.in/wp-content/uploads/2019/07/logo-1.png" alt="" />
+            </div>
             <nav className="navbar navbar-expand-lg bg-black navbar-dark">
-                <div className="container ">
+                <div className="container">
                     <button
                         className="navbar-toggler"
                         type="button"

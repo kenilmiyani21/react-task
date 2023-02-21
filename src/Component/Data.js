@@ -23,7 +23,7 @@ const Data = () => {
     return (
         <>
             <h3 className='mt-3 mb-3  fw-bold' dangerouslySetInnerHTML={{ __html: count?.title?.rendered }}></h3>
-            <p className='text-center' dangerouslySetInnerHTML={{ __html: count?.content?.rendered }}></p>
+            <p className="text-center" dangerouslySetInnerHTML={{ __html: count?.content?.rendered }}></p>
         </>
     );
      
