@@ -27,7 +27,7 @@ function World() {
                             </div>
                             <div className="col-md-8">
                                 <div className="card-body">
-                                    <h2 className="card-title">{items.title.rendered}</h2>
+                                    <h2 className="card-title fw-bold">{items.title.rendered}</h2>
                                     <p className="card-text">{items.excerpt.rendered}</p>
                                 </div>
                             </div>
