@@ -41,7 +41,16 @@ body{
 .hlo {
     background-color: black;
 }
+div img {
+    height: 20rem;
+    width: 20rem;
+}
 
+.kk1{
+    background-color: white;
+    width: auto;
+    height: auto;
+}
 
 .image1 {
     height: 40vh;
