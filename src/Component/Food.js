@@ -8,8 +8,8 @@ function Food() {
         getimage();
     }, []);
     const [news, setNews] = useState([]);
-    const getimage = async () => {
-        await axios.get('https://timenews.co.in/wp-json/wp/v2/posts?categories=15').then((res) => {
+    const getimage = async (data) => {
+        await axios.get('https://timenews.co.in/wp-json/wp/v2/posts?categories=15',data).then((res) => {
             setNews(res.data);
             console.log(res.data[1]);
             // console.log(res.data[1].yoast_head_json.og_image[0].url);
@@ -39,6 +39,9 @@ function Food() {
                                             __html: items.excerpt.rendered,
                                         }}
                                     ></p>
+                                    <Link to={`/Data/${items.id}`}>
+                                        <button className="btn btn-primary">Read more...</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

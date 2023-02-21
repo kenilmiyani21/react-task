@@ -6,7 +6,9 @@
     height: 40vmin;
     pointer-events: none;
 }
-
+body{
+    background-color: lightgray
+}
 .navbarlink:hover {
     background-color: red;
 }
@@ -15,10 +17,14 @@
     background-color: pink;
 }
 
+.hh1{
+    background-color: black;
+}
 .navbarlink {
     color: white;
     text-decoration: none;
 }
+
 
 .dropdown-item {
     color: black;

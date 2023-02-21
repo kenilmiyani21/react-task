@@ -3,20 +3,21 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
 
+
 function Corona() {
     useEffect(() => {
         getimage();
     }, []);
     const [news, setNews] = useState([]);
-    const getimage = async () => {
-        await axios.get('https://timenews.co.in/wp-json/wp/v2/posts?categories=833').then((res) => {
+    const getimage = async (data) => {
+        await axios.get('https://timenews.co.in/wp-json/wp/v2/posts?categories=833',data).then((res) => {
             setNews(res.data);
             console.log(res.data[1]);
             // console.log(res.data[1].yoast_head_json.og_image[0].url);
         });
     };
 
-
+  
 
     return (
         <div>
@@ -41,7 +42,9 @@ function Corona() {
                                             __html: items.excerpt.rendered,
                                         }}
                                     ></p>
-                                    <button>Read more</button>
+                                    <Link to={`/Data/${items.id}`}>
+                                        <button className="btn btn-primary">Read more...</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

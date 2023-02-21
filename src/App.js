@@ -27,6 +27,7 @@ import Food2 from './Component/Food2';
 import Food3 from './Component/Food3';
 import Entertainment2 from './Component/Entertainment2';
 import Entertainment3 from './Component/Entertainment3';
+import Data from './Component/Data';
 
 function App() {
     return (
@@ -60,6 +61,7 @@ function App() {
                     <Route path="/entertainment2" element={<Entertainment2 />} />
                     <Route path="/entertainment3" element={<Entertainment3 />} />
                     <Route path="/beauty" element={<Beauty />} />
+                    <Route path="/data/:id" element={<Data />} />
                     
                 </Routes>
             </BrowserRouter>
