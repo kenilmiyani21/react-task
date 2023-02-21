@@ -27,8 +27,18 @@ function Ahmedabad2() {
                             </div>
                             <div className="col-md-8">
                                 <div className="card-body">
-                                    <h2 className="card-title fw-bold">{items.title.rendered}</h2>
-                                    <p className="card-text">{items.excerpt.rendered}</p>
+                                    <h2
+                                        className="card-title fw-bold"
+                                        dangerouslySetInnerHTML={{
+                                            __html: items.title.rendered,
+                                        }}
+                                    ></h2>
+                                    <p
+                                        className="card-text"
+                                        dangerouslySetInnerHTML={{
+                                            __html: items.excerpt.rendered,
+                                        }}
+                                    ></p>
                                 </div>
                             </div>
                         </div>
