@@ -43,7 +43,7 @@ function Corona() {
                                         }}
                                     ></p>
                                     <Link to={`/Data/${items.id}`}>
-                                        <button className="btn btn-primary">Read more...</button>
+                                        <button className="btn btn-outline-success">Read more...</button>
                                     </Link>
                                 </div>
                             </div>
