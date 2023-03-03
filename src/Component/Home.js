@@ -29,7 +29,7 @@ function Home() {
             <Slider {...setting}>
                 {news.map((value) => (
                     <div>
-                        <img src={value.yoast_head_json.og_image[0].url} key={value.id} alt="..." className="image2"></img>
+                        <img src={value.yoast_head_json.og_image[0].url} key={value.id} alt="hlo" className="image2"></img>
                         <h5 className="textHome1">{value.yoast_head_json.title}</h5>
                         <p className="textHome2">{value.yoast_head_json.description}</p>
                     </div>
